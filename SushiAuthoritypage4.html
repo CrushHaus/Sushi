@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<title> Sushi Authority of Washington</title>
+	
+	<meta charset= "utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name= "description" content= "this is my sushi adventure through Washington state">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="SushiRevision.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!--------Sushi Recommendation js------------------------------------------------------------->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<script src="Table_script.js"></script>
+
+<!--------------Background Cycler-Scripts---------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/background.cycle.js"></script>
+		<script src="script.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("body").backgroundCycle({
+                    imageUrls: [
+                        'lg_70060_0.png',
+                        'otorro1.png',
+						'otoro.png',
+						'otoro-sushi.png',
+                        
+                    ],
+                    fadeSpeed: 2000,
+                    duration: 5000,
+                    backgroundSize: SCALING_MODE_COVER
+                });
+            });
+        </script>
+	
+	</head>
+	
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like" data-href="http://134.39.121.95/W15CST119/cmuller/revision2/sushi%20website/Washington%20Sushi%20Authority/SushiAuthorityindex.html" data-width="20px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
+</div>
+<div id="clear-all">
+
+<nav class="navbar navbar-inverse">
+<div class= "container-fluid">
+<div class="navbar-header">
+  <a class="navbar-brand" href="SushiAuthorityindex.html">Washngton Sushi Authority</a>
+ </div>
+<div>
+<ul class="nav navbar-nav">
+   <li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Restaurants<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="SushiAuthoritypage1.html">Kyoto Japanese Restaurant</a></li>
+      <li><a href="SushiAuthoritypage2.html">Sushi House Pics</a></li>
+		<li><a href="SushiAuthoritypage3.html">Sushi Paradise Pics</a></li>
+		</ul>
+		</li>
+	  <li><a href="SushiAuthoritypage4.html">Sushi Tube</a></li>
+	<li><a href="SushiAuthoritypage5.html">Sushi Links</a></li>
+  </ul>
+</div>
+  </div>
+	</nav>
+
+
+
+
+ <main>
+<article class= "a">
+<div class="center-block" id="align-center">
+
+<select id="selector" onchange="Query()"></select>
+
+				<script>
+					getFish("Match (f:Fish) return f.name");
+				</script>
+			<strong>
+	<table class= "table" id= "fishtable">
+					<thead>
+						<tr>
+						<th> Name </th>
+						<th> Similarity Rank </th>
+						<th> You also might like </th>
+						</tr>
+					</thead>
+				
+		    <tbody>
+						
+		  	</tbody>
+		
+	</table>
+		</strong>
+</div>
+
+</article>
+  </main>
+			
+	<footer>
+				<strong>
+	<h5> Washington Sushi Authority established 2015 </h5>
+			</strong>
+</footer>
+		
+</body>
+
+</html>

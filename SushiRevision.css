@@ -1,0 +1,30 @@
+body {
+font-family: Yellowtail, cursive;
+
+}
+#align-center{
+padding: 3em;
+background-color: rgba(255, 255, 255, 0.4 );
+text-align: center;
+/*text-shadow: 2px 2px salmon;*/
+}
+
+h1, h2, h3,h4{
+   text-shadow: 2px 2px salmon;
+}
+
+th{
+	text-align: center;
+	
+}
+table{
+	text-shadow: 2px 2px salmon;
+	font-weight: 900;
+	font-size: 25px;
+}
+footer,h5{
+	font-weight: 900;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 2px 2px salmon;
+}
